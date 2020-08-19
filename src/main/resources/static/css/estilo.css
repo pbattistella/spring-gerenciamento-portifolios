@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/*Variáveis*/
+:root{
+	--cor-nav-fundo:#006680;
+	--cor-nav-hover: #1b558b;
+    --cor-footer-fundo:#e9e8ed;
+    --cor-div-contato: #34393b;
+	--cor-label-titulo: #db9f3d;
+	--cor-h4-fonte:#006680;
+	--cor-btn-principal-fonte:#ffffff;
+	--cor-btn-principal: #087a41;
+	--cor-btn-principal-hover: #074626;
+}
+
+/*CSS*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+	background-color: var(--cor-nav-fundo) !important;
+}
+
+div.conteudo{
+    height: 600px;
+    margin-top: 20px;
+}
+
+div.contato{
+	background-color: var(--cor-div-contato);
+	height: 180px;
+}
+
+label.lbltitulo{
+	color: var(--cor-label-titulo);
+	width: 100%;
+	font-size: 1em;
+}
+label.lbldado{
+	color: white;
+	width: 100%;
+	font-size: 1em;
+}
+
+footer{
+	height: 80px;
+	background-color: var(--cor-footer-fundo);
+	text-align: center;
+	padding-top: 30px;
+}
+
+footer label {
+	font-size: 0.8em;
+}
+
+.formulario{
+	width: 40%;
+	border-radius: 5px;
+	border: 2px solid var(--cor-nav-fundo);
+	margin: 0 auto;
+	margin-top: 70px;
+	padding: 25px;
+}
+
+
+div.formulario > h4{
+    text-align: center;
+    color: var(--cor-h4-fonte);
+    font-weight: bold;
+}
+
+div.formulario .msg{
+	text-align: center;
+}
+
+.btn-principal{
+	background-color: var(--cor-btn-principal);
+	color: var(--cor-btn-principal-fonte);
+}
+
+.btn-principal:hover{
+	font-weight: bold;
+	color: var(--cor-btn-principal-fonte)!important;
+	background-color: var(--cor-btn-principal-hover)!important;
+}
+
+.btn-sair{
+    background-color: var(--cor-nav-fundo);
+}
+
+.btn-sair:hover{
+	font-weight: bold;
+	background-color: var(--cor-nav-hover);
+	
+}
+
+.form-group{
+    text-align: center;
+    font-size: 3;
+    color: var(--cor-h4-fonte);
+    font-weight: bold;
+    height: 25px;
+}
+
+.label-lembrar{
+    font-size: 14px;
+}
+
+input{
+	text-align: center;
+}
+
+
+@media screen and (max-width: 500px){
+    .formulario{
+        width: 85%;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-right{
+        text-align: center;
+    }
+}
